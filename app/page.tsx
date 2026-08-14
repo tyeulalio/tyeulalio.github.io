@@ -237,7 +237,15 @@ export default function Home() {
         </div>
 
         <p className="publication-note">
-          A complete publication record will be linked through Google Scholar.
+          For a complete publication record, visit{" "}
+          <a
+            href="https://scholar.google.com/citations?user=MCfaK84AAAAJ&hl=en"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Google Scholar
+          </a>
+          .
         </p>
       </section>
 

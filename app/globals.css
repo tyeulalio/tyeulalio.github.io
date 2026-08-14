@@ -422,6 +422,14 @@ h1 {
   margin: 24px 0 0 94px;
 }
 
+.publication-note a {
+  text-decoration: underline;
+  text-decoration-color: rgba(35, 42, 42, 0.35);
+  text-underline-offset: 3px;
+}
+
+.publication-note a:hover { text-decoration-color: currentColor; }
+
 .contact {
   background: var(--sage);
   color: var(--white);
