@@ -219,9 +219,23 @@ export default function Home() {
           eulalio@alumni.stanford.edu <span aria-hidden="true">↗</span>
         </a>
         <div className="contact-links" aria-label="Additional links">
-          <span>GitHub</span>
-          <span>Google Scholar</span>
-          <span>LinkedIn</span>
+          <a href="https://github.com/tyeulalio/" target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+          <a
+            href="https://scholar.google.com/citations?user=MCfaK84AAAAJ&hl=en"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Google Scholar
+          </a>
+          <a
+            href="https://www.linkedin.com/in/tiffany-eulalio/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn
+          </a>
           <span>Resume</span>
           <span>CV</span>
         </div>
