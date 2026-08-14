@@ -77,6 +77,13 @@ export default function Home() {
           <a href="#about">About</a>
           <a href="#publications">Publications</a>
           <a href="#contact">Contact</a>
+          <a
+            href="/Tiffany_Eulalio_CV.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            CV
+          </a>
         </nav>
       </header>
 
@@ -97,7 +104,13 @@ export default function Home() {
           </p>
           <div className="hero-links" aria-label="Professional links">
             <a href="#work">Selected work <span aria-hidden="true">↓</span></a>
-            <a href="#contact">Resume &amp; CV <span aria-hidden="true">↗</span></a>
+            <a
+              href="/Tiffany_Eulalio_CV.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View CV <span aria-hidden="true">↗</span>
+            </a>
           </div>
         </div>
 
@@ -249,8 +262,13 @@ export default function Home() {
           >
             LinkedIn
           </a>
-          <span>Resume</span>
-          <span>CV</span>
+          <a
+            href="/Tiffany_Eulalio_CV.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            CV
+          </a>
         </div>
       </section>
 
