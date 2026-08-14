@@ -20,16 +20,23 @@ const projects = [
   {
     number: "03",
     type: "Methods & software",
-    title: "Regional population structure for genetic studies",
-    description:
-      "I developed regionalpcs, an open-source Bioconductor package for quantifying ancestry and population structure within targeted genomic regions.",
-    methods: "R/Bioconductor · Package development · Reproducible research",
+    title: "Capturing regional DNA methylation signal",
+    description: (
+      <>
+        I developed <em>regionalpcs</em>, a Bioconductor R package that uses
+        principal components to summarize patterns across CpGs within gene
+        regions. The method captures more of the regional signal than simple
+        averaging and improves sensitivity to methylation associations.
+      </>
+    ),
+    methods: "DNA methylation · Principal components · R/Bioconductor",
     className: "project-visual software",
   },
 ];
 
 const publications = [
   {
+    id: "survivorship-mediation",
     journal: "Nature Communications · 2026",
     title:
       "Epigenome-wide analysis identifies DNA methylation mediators of treatment-related cardiometabolic risk in survivors of childhood cancer",
@@ -37,13 +44,19 @@ const publications = [
     url: "https://www.nature.com/articles/s41467-026-68689-6",
   },
   {
+    id: "regionalpcs",
     journal: "Nature Communications · 2025",
-    title:
-      "regionalpcs improve discovery of DNA methylation associations with complex traits",
+    title: (
+      <>
+        <em>regionalpcs</em> improve discovery of DNA methylation associations
+        with complex traits
+      </>
+    ),
     role: "First author",
     url: "https://www.nature.com/articles/s41467-024-55698-6",
   },
   {
+    id: "ed-triage",
     journal: "Journal of the American Medical Informatics Association · 2021",
     title:
       "Developing machine learning models to personalize care levels among emergency room patients for hospital admission",
@@ -187,7 +200,7 @@ export default function Home() {
 
         <div className="publication-list">
           {publications.map((publication, index) => (
-            <article className="publication" key={publication.title}>
+            <article className="publication" key={publication.id}>
               <p className="publication-index">0{index + 1}</p>
               <div>
                 <p className="journal">{publication.journal}</p>
