@@ -75,9 +75,9 @@ export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a className="wordmark" href="#top" aria-label="Tiffany Eulalio home">
+        <span className="wordmark" aria-label="Tiffany Eulalio">
           TE
-        </a>
+        </span>
         <nav aria-label="Primary navigation">
           <a href="#work">Work</a>
           <a href="#about">About</a>
