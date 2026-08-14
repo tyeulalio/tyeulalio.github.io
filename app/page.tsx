@@ -215,8 +215,8 @@ export default function Home() {
           I am based in Tampa, Florida, and work with collaborators across
           biomedical research, clinical science, and computational methods.
         </p>
-        <a className="email-link" href="mailto:teulalio@usf.edu">
-          teulalio@usf.edu <span aria-hidden="true">↗</span>
+        <a className="email-link" href="mailto:eulalio@alumni.stanford.edu">
+          eulalio@alumni.stanford.edu <span aria-hidden="true">↗</span>
         </a>
         <div className="contact-links" aria-label="Additional links">
           <span>GitHub</span>
