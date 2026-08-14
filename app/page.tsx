@@ -7,6 +7,8 @@ const projects = [
       "I study how treatment exposures become biologically embedded, using DNA methylation and longitudinal clinical data to understand cardiometabolic health in survivors of childhood cancer.",
     methods: "DNA methylation · Clinical phenotypes · Mediation · RNA-seq",
     className: "project-visual survivorship",
+    image: "/research-cancer-survivorship.webp",
+    alt: "Conceptual illustration of childhood cancer treatment and molecular signals associated with long-term cardiometabolic health",
   },
   {
     number: "02",
@@ -16,6 +18,8 @@ const projects = [
       "My doctoral work mapped cell-type-specific methylation quantitative trait loci in the human brain and examined how regulatory variation contributes to Alzheimer’s disease biology.",
     methods: "meQTLs · Statistical genetics · Fine-mapping · Brain epigenomics",
     className: "project-visual regulation",
+    image: "/research-cell-type-methylation.webp",
+    alt: "Illustration of bulk brain DNA methylation measurements resolving into four cell-type-specific signal patterns",
   },
   {
     number: "03",
@@ -31,6 +35,8 @@ const projects = [
     ),
     methods: "DNA methylation · Principal components · R/Bioconductor",
     className: "project-visual software",
+    image: "/research-regionalpcs.webp",
+    alt: "Illustration of CpG methylation patterns across a gene region transforming into two regional principal-component signals",
   },
 ];
 
@@ -151,15 +157,16 @@ export default function Home() {
         <div className="project-list">
           {projects.map((project) => (
             <article className="project" key={project.number}>
-              <div className={project.className} aria-hidden="true">
+              <div className={project.className}>
+                <img
+                  src={project.image}
+                  alt={project.alt}
+                  width="1200"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
                 <span className="visual-number">{project.number}</span>
-                <div className="visual-art">
-                  <i />
-                  <i />
-                  <i />
-                  <i />
-                  <i />
-                </div>
               </div>
               <div className="project-copy">
                 <p className="project-type">{project.type}</p>

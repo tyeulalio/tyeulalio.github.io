@@ -270,82 +270,39 @@ h1 {
   padding: 58px 0;
 }
 
-.project-visual { aspect-ratio: 1.5 / 1; overflow: hidden; position: relative; }
-.project-visual::before, .project-visual::after { content: ""; position: absolute; }
-.survivorship { background: #d7c8b8; }
-
-.survivorship::before {
-  background: repeating-linear-gradient(90deg, rgba(23, 42, 50, 0.16) 0 1px, transparent 1px 28px);
-  inset: 0;
+.project-visual {
+  aspect-ratio: 1.5 / 1;
+  background: var(--white);
+  border: 1px solid var(--rule);
+  overflow: hidden;
+  position: relative;
 }
 
-.survivorship::after {
-  border: 1px solid rgba(23, 42, 50, 0.45);
-  border-radius: 50%;
-  height: 52%;
-  right: 13%;
-  top: 24%;
-  width: 38%;
-}
-
-.regulation { background: #b8ccc3; }
-
-.regulation::before {
-  border: 1px solid rgba(23, 42, 50, 0.45);
-  border-radius: 50%;
-  height: 170%;
-  left: -17%;
-  top: -38%;
-  width: 70%;
-}
-
-.regulation::after {
-  background: radial-gradient(circle, rgba(23, 42, 50, 0.65) 0 3px, transparent 4px);
-  background-size: 32px 32px;
-  inset: 12% 7% 12% 48%;
-}
-
-.software { background: #c99073; }
-.software::before { border: 1px solid rgba(255, 253, 248, 0.7); inset: 15%; }
-
-.software::after {
-  background: repeating-linear-gradient(0deg, transparent 0 19px, rgba(255, 253, 248, 0.55) 20px 21px);
-  inset: 26% 23%;
+.project-visual img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
 .visual-number {
-  color: rgba(23, 42, 50, 0.7);
+  align-items: center;
+  backdrop-filter: blur(6px);
+  background: rgba(244, 240, 232, 0.9);
+  border: 1px solid rgba(23, 42, 50, 0.22);
+  border-radius: 50%;
+  color: var(--ink);
+  display: flex;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 20px;
-  left: 22px;
+  font-size: 14px;
+  height: 38px;
+  justify-content: center;
+  left: 16px;
   position: absolute;
   top: 16px;
+  width: 38px;
   z-index: 2;
 }
-
-.visual-art {
-  align-items: center;
-  bottom: 10%;
-  display: flex;
-  gap: 9px;
-  left: 10%;
-  position: absolute;
-  right: 10%;
-  z-index: 2;
-}
-
-.visual-art i {
-  background: rgba(23, 42, 50, 0.72);
-  border-radius: 50%;
-  display: block;
-  height: 8px;
-  width: 8px;
-}
-
-.visual-art i:nth-child(2) { margin-left: 9%; }
-.visual-art i:nth-child(3) { margin-left: 16%; }
-.visual-art i:nth-child(4) { margin-left: 4%; }
-.visual-art i:nth-child(5) { margin-left: auto; }
 
 .project-copy { max-width: 610px; }
 
