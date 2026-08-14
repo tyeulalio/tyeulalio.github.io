@@ -499,11 +499,23 @@ h1 {
   padding-top: 24px;
 }
 
-.contact-links span {
+.contact-links span,
+.contact-links a {
   color: rgba(255, 253, 248, 0.78);
   font-size: 11px;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+}
+
+.contact-links a {
+  border-bottom: 1px solid transparent;
+  transition: border-color 180ms ease, color 180ms ease;
+}
+
+.contact-links a:hover,
+.contact-links a:focus-visible {
+  border-color: currentColor;
+  color: var(--white);
 }
 
 footer {
