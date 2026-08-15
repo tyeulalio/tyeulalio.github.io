@@ -147,7 +147,7 @@ export default function Home() {
       <section className="section work-section" id="work">
         <div className="section-heading">
           <p className="eyebrow">Selected work</p>
-          <h2>Questions I return to</h2>
+          <h2>Research highlights</h2>
           <p>
             A selection of research spanning cancer survivorship, regulatory
             genomics, and computational methods.
